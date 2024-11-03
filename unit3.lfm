@@ -1,4 +1,4 @@
-object Form3: TForm3
+object FormAcercaDe: TFormAcercaDe
   Left = 703
   Height = 326
   Top = 333

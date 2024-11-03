@@ -9,9 +9,9 @@ uses
 
 type
 
-  { TForm3 }
+  { TFormAcercaDe }
 
-  TForm3 = class(TForm)
+  TFormAcercaDe = class(TForm)
     Button1: TButton;
     GroupBox1: TGroupBox;
     Label1: TLabel;
@@ -27,20 +27,20 @@ type
   end;
 
 var
-  Form3: TForm3;
+  FormAcercaDe: TFormAcercaDe;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm3 }
+{ TFormAcercaDe }
 
-procedure TForm3.Button1Click(Sender: TObject);
+procedure TFormAcercaDe.Button1Click(Sender: TObject);
 begin
   Close;
 end;
 
-procedure TForm3.FormCreate(Sender: TObject);
+procedure TFormAcercaDe.FormCreate(Sender: TObject);
 begin
 
 end;

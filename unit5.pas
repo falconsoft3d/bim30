@@ -17,8 +17,7 @@ type
     SQLite3Connection1: TSQLite3Connection;
     SQLQuery1: TSQLQuery;
     SQLQueryProject: TSQLQuery;
-    SQLTransaction1: TSQLTransaction;
-    SQLTransactionProject: TSQLTransaction;
+    SQLTransaction: TSQLTransaction;
     procedure DataModuleCreate(Sender: TObject);
     procedure SQLite3Connection1AfterConnect(Sender: TObject);
   private
@@ -47,8 +46,7 @@ begin
    SQLite3Connection1.Connected:=True;
 
    // Ejecutar la consulta y abrir el conjunto de datos
-   SQLTransactionProject.Active:= True;
-
+   SQLTransaction.Active:= True;
    SQLQueryProject.Open;
 
 end;

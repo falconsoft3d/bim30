@@ -14,7 +14,12 @@ type
   TForm3 = class(TForm)
     Button1: TButton;
     GroupBox1: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
     procedure Button1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
 
   public
@@ -33,6 +38,11 @@ implementation
 procedure TForm3.Button1Click(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TForm3.FormCreate(Sender: TObject);
+begin
+
 end;
 
 end.

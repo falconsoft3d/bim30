@@ -2,32 +2,24 @@ object DataModule1: TDataModule1
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 560
-  HorizontalOffset = 661
-  VerticalOffset = 295
+  HorizontalOffset = 743
+  VerticalOffset = 275
   Width = 910
   object SQLite3Connection1: TSQLite3Connection
     Connected = False
     LoginPrompt = False
     DatabaseName = 'db.sqlite'
     KeepConnection = False
-    Transaction = SQLTransaction1
     AlwaysUseBigint = False
     Left = 64
-    Top = 48
-  end
-  object SQLTransaction1: TSQLTransaction
-    Active = False
-    Database = SQLite3Connection1
-    Left = 224
     Top = 48
   end
   object SQLQuery1: TSQLQuery
     FieldDefs = <>
     Database = SQLite3Connection1
-    Transaction = SQLTransaction1
+    Transaction = SQLTransaction
     Params = <>
     Macros = <>
-    DataSource = DataSource1
     Left = 384
     Top = 48
   end
@@ -40,16 +32,16 @@ object DataModule1: TDataModule1
     Left = 528
     Top = 136
   end
-  object SQLTransactionProject: TSQLTransaction
+  object SQLTransaction: TSQLTransaction
     Active = False
     Database = SQLite3Connection1
     Left = 224
-    Top = 136
+    Top = 48
   end
   object SQLQueryProject: TSQLQuery
     FieldDefs = <>
     Database = SQLite3Connection1
-    Transaction = SQLTransactionProject
+    Transaction = SQLTransaction
     SQL.Strings = (
       'SELECT * FROM bim_project;'
     )

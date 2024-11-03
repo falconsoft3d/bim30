@@ -1,7 +1,7 @@
 object Form2: TForm2
-  Left = 214
+  Left = 420
   Height = 379
-  Top = 260
+  Top = 406
   Width = 601
   Caption = 'Configuración de Odoo ERP'
   ClientHeight = 379

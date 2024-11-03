@@ -6,15 +6,21 @@ interface
 
 uses
   Classes, SysUtils, SQLite3Conn, SQLDB, Forms, Controls, Graphics, Dialogs,
-  DBGrids, DBCtrls;
+  DBGrids, DBCtrls, StdCtrls;
 
 type
 
-  { TForm4 }
+  { TFormProyectos }
 
-  TForm4 = class(TForm)
+  TFormProyectos = class(TForm)
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
     DBGrid1: TDBGrid;
     DBNavigator1: TDBNavigator;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
     procedure SQLite3Connection1AfterConnect(Sender: TObject);
   private
 
@@ -23,15 +29,15 @@ type
   end;
 
 var
-  Form4: TForm4;
+  FormProyectos: TFormProyectos;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm4 }
+{ TFormProyectos }
 
-procedure TForm4.SQLite3Connection1AfterConnect(Sender: TObject);
+procedure TFormProyectos.SQLite3Connection1AfterConnect(Sender: TObject);
 begin
 
 end;
