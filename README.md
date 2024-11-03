@@ -1,4 +1,6 @@
 # bim30
+Bim 30 es un software que estoy desarrollando para integrar con bim20 de odoo, permitiendo trabajar local y aumentar la velocidad de cálculo.
+
 
 Marlon Falcón Hernández | Valencia, España
 - ERP, CRM y Software
