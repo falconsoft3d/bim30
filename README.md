@@ -12,6 +12,12 @@ Bim 30 es un software que estoy desarrollando para integrar con bim20 de odoo, p
 - Github: https://github.com/falconsoft3d
 - linkedin: https://linkedin.com/in/marlon-falcón-3a2aa9a4
 
+
+# Tecnologías
+- Lazarus
+- Pascal
+- Sqlite
+
 # Captura
 ![Alt text](https://github.com/falconsoft3d/bim30/blob/main/00/captura_01.png?raw=true "Configuracion de PyCharm")
 
