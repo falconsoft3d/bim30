@@ -1,12 +1,14 @@
 object Form2: TForm2
   Left = 633
-  Height = 400
-  Top = 232
-  Width = 587
+  Height = 375
+  Top = 231
+  Width = 569
   Caption = 'Configuración de Odoo ERP'
-  ClientHeight = 400
-  ClientWidth = 587
+  ClientHeight = 375
+  ClientWidth = 569
   DesignTimePPI = 120
+  OnCreate = FormCreate
+  OnShow = FormShow
   LCLVersion = '3.6.0.0'
   object Edit1: TEdit
     Left = 160
@@ -14,7 +16,7 @@ object Form2: TForm2
     Top = 32
     Width = 320
     TabOrder = 0
-    Text = 'https://demo16.bim20.com'
+    Text = 'Edit1'
   end
   object Label1: TLabel
     Left = 56
@@ -29,7 +31,7 @@ object Form2: TForm2
     Top = 72
     Width = 320
     TabOrder = 1
-    Text = 'admin'
+    Text = 'Edit2'
   end
   object Label2: TLabel
     Left = 56
@@ -43,7 +45,10 @@ object Form2: TForm2
     Height = 28
     Top = 120
     Width = 320
+    EchoMode = emPassword
+    PasswordChar = '*'
     TabOrder = 2
+    Text = 'Edit3'
   end
   object Label3: TLabel
     Left = 56
@@ -53,7 +58,7 @@ object Form2: TForm2
     Caption = 'Contraseña'
   end
   object ToggleBox1: TToggleBox
-    Left = 288
+    Left = 160
     Height = 31
     Top = 304
     Width = 94
@@ -61,11 +66,51 @@ object Form2: TForm2
     TabOrder = 3
   end
   object Button1: TButton
-    Left = 392
+    Left = 264
     Height = 31
     Top = 304
     Width = 94
     Caption = 'Guardar'
     TabOrder = 4
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 384
+    Height = 31
+    Top = 304
+    Width = 94
+    Caption = 'Cerrar'
+    TabOrder = 5
+    OnClick = Button2Click
+  end
+  object DataSource1: TDataSource
+    Left = 56
+    Top = 184
+  end
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'db.sqlite'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    AlwaysUseBigint = False
+    Left = 176
+    Top = 184
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = SQLite3Connection1
+    Left = 320
+    Top = 184
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    Params = <>
+    Macros = <>
+    DataSource = DataSource1
+    Left = 56
+    Top = 256
   end
 end

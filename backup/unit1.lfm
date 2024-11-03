@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 301
-  Height = 608
-  Top = 174
+  Left = 332
+  Height = 607
+  Top = 201
   Width = 1106
   Caption = 'Bim30'
   DesignTimePPI = 120
@@ -9,8 +9,8 @@ object Form1: TForm1
   OnCreate = FormCreate
   LCLVersion = '3.6.0.0'
   object MainMenu1: TMainMenu
-    Left = 64
-    Top = 56
+    Left = 56
+    Top = 32
     object MenuItem1: TMenuItem
       Caption = 'Archivo'
       OnClick = MenuItem1Click
@@ -31,6 +31,10 @@ object Form1: TForm1
     end
     object MenuItem4: TMenuItem
       Caption = 'Ayuda'
+      object MenuItem7: TMenuItem
+        Caption = 'Acerca De'
+        OnClick = MenuItem7Click
+      end
     end
   end
 end
