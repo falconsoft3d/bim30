@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, SQLite3Conn, SQLDB, Forms, Controls, Graphics, Dialogs,
-  DBGrids;
+  DBGrids, DBCtrls;
 
 type
 
@@ -14,6 +14,7 @@ type
 
   TForm4 = class(TForm)
     DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
     procedure SQLite3Connection1AfterConnect(Sender: TObject);
   private
 

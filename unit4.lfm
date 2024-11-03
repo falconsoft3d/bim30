@@ -1,11 +1,11 @@
 object Form4: TForm4
-  Left = 405
-  Height = 710
-  Top = 185
-  Width = 933
+  Left = 337
+  Height = 470
+  Top = 214
+  Width = 921
   Caption = 'Proyectos'
-  ClientHeight = 710
-  ClientWidth = 933
+  ClientHeight = 470
+  ClientWidth = 921
   DesignTimePPI = 120
   LCLVersion = '3.6.0.0'
   object DBGrid1: TDBGrid
@@ -17,5 +17,23 @@ object Form4: TForm4
     Columns = <>
     DataSource = DataModule1.DataSourceProject
     TabOrder = 0
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 272
+    Height = 31
+    Top = 368
+    Width = 301
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 31
+    ClientWidth = 301
+    DataSource = DataModule1.DataSourceProject
+    Options = []
+    TabOrder = 1
   end
 end

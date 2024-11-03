@@ -108,7 +108,7 @@ procedure TForm2.FormShow(Sender: TObject);
 begin
   try
     // Abre la conexión y la transacción
-    DataModule1.SQLite3Connection1.Open;
+    {
     DataModule1.SQLTransaction1.Active := True;
 
     // Realiza la consulta para obtener los valores de la tabla "odoo"
@@ -129,6 +129,7 @@ begin
 
     // Cierra la consulta
     DataModule1.SQLQuery1.Close;
+    }
   except
     on E: Exception do
       ShowMessage('Error al contectarse a la base de datos: ' + E.Message);

@@ -1,11 +1,11 @@
 object Form4: TForm4
-  Left = 439
-  Height = 710
-  Top = 199
-  Width = 933
+  Left = 337
+  Height = 470
+  Top = 214
+  Width = 921
   Caption = 'Proyectos'
-  ClientHeight = 710
-  ClientWidth = 933
+  ClientHeight = 470
+  ClientWidth = 921
   DesignTimePPI = 120
   LCLVersion = '3.6.0.0'
   object DBGrid1: TDBGrid

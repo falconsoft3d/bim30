@@ -108,15 +108,14 @@ procedure TForm2.FormShow(Sender: TObject);
 begin
   try
     // Abre la conexión y la transacción
-    DataModule1.SQLite3Connection1.Open;
     DataModule1.SQLTransaction1.Active := True;
-
+    {
     // Realiza la consulta para obtener los valores de la tabla "odoo"
     DataModule1.SQLQuery1.SQL.Text := 'SELECT url, user, password FROM odoo WHERE ID = 1';  // Suponiendo que quieres obtener el primer registro
     DataModule1.SQLQuery1.Open;
 
     // Verifica si hay resultados y asigna los valores a los TEdit
-    if not DataModule.SQLQuery1.EOF then
+    if not DataModule1.SQLQuery1.EOF then
     begin
       Edit1.Text := DataModule1.SQLQuery1.FieldByName('url').AsString;
       Edit2.Text := DataModule1.SQLQuery1.FieldByName('user').AsString;
@@ -129,6 +128,7 @@ begin
 
     // Cierra la consulta
     DataModule1.SQLQuery1.Close;
+    }
   except
     on E: Exception do
       ShowMessage('Error al contectarse a la base de datos: ' + E.Message);
