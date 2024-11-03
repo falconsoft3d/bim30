@@ -1,0 +1,37 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 560
+  HorizontalOffset = 992
+  VerticalOffset = 190
+  Width = 910
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'db.sqlite'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    AlwaysUseBigint = False
+    Left = 64
+    Top = 48
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = SQLite3Connection1
+    Left = 208
+    Top = 56
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    Params = <>
+    Macros = <>
+    DataSource = DataSource1
+    Left = 162
+    Top = 151
+  end
+  object DataSource1: TDataSource
+    Left = 48
+    Top = 136
+  end
+end

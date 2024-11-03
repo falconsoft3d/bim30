@@ -15,10 +15,12 @@ object Form1: TForm1
       Caption = 'Archivo'
       OnClick = MenuItem1Click
       object MenuItem2: TMenuItem
-        Caption = 'Nuevo Proyecto'
+        Caption = 'Proyectos'
+        ShortCut = 16464
       end
       object MenuItem5: TMenuItem
         Caption = 'Salir'
+        ShortCut = 16465
         OnClick = MenuItem5Click
       end
     end

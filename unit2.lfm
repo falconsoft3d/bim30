@@ -1,11 +1,11 @@
 object Form2: TForm2
-  Left = 633
-  Height = 375
-  Top = 231
-  Width = 569
+  Left = 214
+  Height = 379
+  Top = 260
+  Width = 601
   Caption = 'Configuración de Odoo ERP'
-  ClientHeight = 375
-  ClientWidth = 569
+  ClientHeight = 379
+  ClientWidth = 601
   DesignTimePPI = 120
   OnCreate = FormCreate
   OnShow = FormShow
@@ -66,7 +66,7 @@ object Form2: TForm2
     TabOrder = 3
   end
   object Button1: TButton
-    Left = 264
+    Left = 272
     Height = 31
     Top = 304
     Width = 94
@@ -84,33 +84,7 @@ object Form2: TForm2
     OnClick = Button2Click
   end
   object DataSource1: TDataSource
-    Left = 56
-    Top = 184
-  end
-  object SQLite3Connection1: TSQLite3Connection
-    Connected = False
-    LoginPrompt = False
-    DatabaseName = 'db.sqlite'
-    KeepConnection = False
-    Transaction = SQLTransaction1
-    AlwaysUseBigint = False
-    Left = 176
-    Top = 184
-  end
-  object SQLTransaction1: TSQLTransaction
-    Active = False
-    Database = SQLite3Connection1
-    Left = 320
-    Top = 184
-  end
-  object SQLQuery1: TSQLQuery
-    FieldDefs = <>
-    Database = SQLite3Connection1
-    Transaction = SQLTransaction1
-    Params = <>
-    Macros = <>
-    DataSource = DataSource1
-    Left = 56
-    Top = 256
+    Left = 664
+    Top = 64
   end
 end

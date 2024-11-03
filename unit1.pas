@@ -5,7 +5,8 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, Unit2, Unit3;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, ComCtrls, Unit2,
+  Unit3, Unit4;
 
 type
 
@@ -20,8 +21,10 @@ type
     MenuItem5: TMenuItem;
     MenuItem6: TMenuItem;
     MenuItem7: TMenuItem;
+    procedure CoolBar1Change(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
+    procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
     procedure MenuItem7Click(Sender: TObject);
@@ -45,9 +48,19 @@ begin
 
 end;
 
+procedure TForm1.CoolBar1Change(Sender: TObject);
+begin
+
+end;
+
 procedure TForm1.MenuItem1Click(Sender: TObject);
 begin
 
+end;
+
+procedure TForm1.MenuItem2Click(Sender: TObject);
+begin
+  Form4.ShowModal;
 end;
 
 procedure TForm1.MenuItem5Click(Sender: TObject);
