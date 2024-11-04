@@ -32,7 +32,6 @@ object FormProyectos: TFormProyectos
         FieldName = 'odoo_id'
       end>
     DataSource = DataModule1.DataSourceProject
-    ReadOnly = True
     TabOrder = 0
   end
   object DBNavigator1: TDBNavigator
@@ -109,7 +108,7 @@ object FormProyectos: TFormProyectos
     Height = 128
     Top = 240
     Width = 288
-    Caption = 'Integración'
+    Caption = 'Integración con Odoo ERP'
     ClientHeight = 103
     ClientWidth = 284
     TabOrder = 5
@@ -130,12 +129,20 @@ object FormProyectos: TFormProyectos
       TabOrder = 1
     end
     object Edit1: TEdit
-      Left = 16
+      Left = 144
       Height = 28
       Top = 16
       Width = 112
+      Color = clInfoBk
       TabOrder = 2
       Text = '0'
+    end
+    object Label4: TLabel
+      Left = 16
+      Height = 20
+      Top = 24
+      Width = 64
+      Caption = 'Odoo ID :'
     end
   end
 end

@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, ComCtrls,
-  ExtCtrls, StdCtrls, Buttons, ButtonPanel, Unit2, Unit3, Unit4;
+  ExtCtrls, StdCtrls, Buttons, ButtonPanel, Unit2, Unit3, Unit4, Unit6;
 
 type
 
@@ -15,6 +15,10 @@ type
   TFormPrincipal = class(TForm)
     Button1: TButton;
     Button10: TButton;
+    Button11: TButton;
+    Button12: TButton;
+    Button13: TButton;
+    Button14: TButton;
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
@@ -47,6 +51,8 @@ type
     MenuItem15: TMenuItem;
     MenuItem16: TMenuItem;
     MenuItem17: TMenuItem;
+    MenuItem18: TMenuItem;
+    MenuItem19: TMenuItem;
     MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
@@ -66,11 +72,14 @@ type
     Panel8: TPanel;
     Panel9: TPanel;
     TrayIcon1: TTrayIcon;
+    procedure Button11Click(Sender: TObject);
+    procedure Button12Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure CoolBar1Change(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Label1Click(Sender: TObject);
     procedure Label8Click(Sender: TObject);
+    procedure MenuItem18Click(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
     procedure MenuItem2Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
@@ -107,6 +116,11 @@ begin
 
 end;
 
+procedure TFormPrincipal.MenuItem18Click(Sender: TObject);
+begin
+  FormConfiguracion.ShowModal;
+end;
+
 procedure TFormPrincipal.CoolBar1Change(Sender: TObject);
 begin
 
@@ -115,6 +129,16 @@ end;
 procedure TFormPrincipal.Button1Click(Sender: TObject);
 begin
   FormProyectos.ShowModal;
+end;
+
+procedure TFormPrincipal.Button12Click(Sender: TObject);
+begin
+  FormAcercaDe.ShowModal;
+end;
+
+procedure TFormPrincipal.Button11Click(Sender: TObject);
+begin
+  FormConfiguracion.ShowModal;
 end;
 
 procedure TFormPrincipal.MenuItem1Click(Sender: TObject);

@@ -13,14 +13,19 @@ type
   { TFormProyectos }
 
   TFormProyectos = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
     DBEdit1: TDBEdit;
     DBEdit2: TDBEdit;
     DBEdit3: TDBEdit;
     DBGrid1: TDBGrid;
     DBNavigator1: TDBNavigator;
+    Edit1: TEdit;
+    GroupBox1: TGroupBox;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
+    Label4: TLabel;
     procedure SQLite3Connection1AfterConnect(Sender: TObject);
   private
 
