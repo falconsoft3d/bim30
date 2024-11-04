@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, ComCtrls,
-  ExtCtrls, StdCtrls, Unit2, Unit3, Unit4;
+  ExtCtrls, StdCtrls, Buttons, ButtonPanel, Unit2, Unit3, Unit4;
 
 type
 
@@ -14,6 +14,7 @@ type
 
   TFormPrincipal = class(TForm)
     Button1: TButton;
+    Button10: TButton;
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
@@ -21,10 +22,13 @@ type
     Button6: TButton;
     Button7: TButton;
     Button8: TButton;
+    Button9: TButton;
     Label1: TLabel;
     Label10: TLabel;
     Label11: TLabel;
     Label12: TLabel;
+    Label13: TLabel;
+    Label14: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
@@ -35,13 +39,24 @@ type
     Label9: TLabel;
     MainMenu1: TMainMenu;
     MenuItem1: TMenuItem;
+    MenuItem10: TMenuItem;
+    MenuItem11: TMenuItem;
+    MenuItem12: TMenuItem;
+    MenuItem13: TMenuItem;
+    MenuItem14: TMenuItem;
+    MenuItem15: TMenuItem;
+    MenuItem16: TMenuItem;
+    MenuItem17: TMenuItem;
     MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
     MenuItem5: TMenuItem;
     MenuItem6: TMenuItem;
     MenuItem7: TMenuItem;
+    MenuItem8: TMenuItem;
+    MenuItem9: TMenuItem;
     Panel1: TPanel;
+    Panel10: TPanel;
     Panel2: TPanel;
     Panel3: TPanel;
     Panel4: TPanel;
@@ -49,6 +64,8 @@ type
     Panel6: TPanel;
     Panel7: TPanel;
     Panel8: TPanel;
+    Panel9: TPanel;
+    TrayIcon1: TTrayIcon;
     procedure Button1Click(Sender: TObject);
     procedure CoolBar1Change(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -59,6 +76,7 @@ type
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
     procedure MenuItem7Click(Sender: TObject);
+    procedure MenuItem9Click(Sender: TObject);
   private
 
   public
@@ -122,6 +140,11 @@ end;
 procedure TFormPrincipal.MenuItem7Click(Sender: TObject);
 begin
   FormAcercaDe.ShowModal;
+end;
+
+procedure TFormPrincipal.MenuItem9Click(Sender: TObject);
+begin
+
 end;
 
 end.

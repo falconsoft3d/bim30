@@ -1,17 +1,17 @@
 object FormPrincipal: TFormPrincipal
   Left = 296
-  Height = 607
-  Top = 172
-  Width = 1106
-  Caption = 'Bim30'
-  ClientHeight = 607
-  ClientWidth = 1106
+  Height = 602
+  Top = 170
+  Width = 1149
+  Caption = 'Bim30 | Sistema de Gestión de Obra.'
+  ClientHeight = 602
+  ClientWidth = 1149
   DesignTimePPI = 120
   Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '3.6.0.0'
   object Label1: TLabel
-    Left = 16
+    Left = 18
     Height = 55
     Top = 51
     Width = 116
@@ -21,7 +21,7 @@ object FormPrincipal: TFormPrincipal
     OnClick = Label1Click
   end
   object Label2: TLabel
-    Left = 16
+    Left = 24
     Height = 20
     Top = 107
     Width = 110
@@ -159,11 +159,11 @@ object FormPrincipal: TFormPrincipal
     Left = 16
     Height = 20
     Top = 32
-    Width = 113
-    Caption = 'by Marlon Falcón'
+    Width = 132
+    Caption = 'Marlon Falcón Hdez'
   end
   object Label8: TLabel
-    Left = 16
+    Left = 24
     Height = 20
     Top = 128
     Width = 99
@@ -198,25 +198,216 @@ object FormPrincipal: TFormPrincipal
     Height = 31
     Top = 136
     Width = 144
-    Caption = 'APUs'
+    Caption = 'Certifcaciones'
     TabOrder = 9
+    OnClick = Button1Click
+  end
+  object Panel6: TPanel
+    Left = 488
+    Height = 111
+    Top = 176
+    Width = 144
+    BorderStyle = bsSingle
+    ClientHeight = 107
+    ClientWidth = 140
+    Color = clAppWorkspace
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 10
+    object Label10: TLabel
+      Left = 48
+      Height = 55
+      Top = 24
+      Width = 44
+      Caption = '00'
+      Font.Height = 56
+      ParentFont = False
+      OnClick = Label1Click
+    end
+  end
+  object Button6: TButton
+    Left = 488
+    Height = 31
+    Top = 296
+    Width = 144
+    Caption = 'APUs'
+    TabOrder = 11
+    OnClick = Button1Click
+  end
+  object Panel7: TPanel
+    Left = 648
+    Height = 111
+    Top = 16
+    Width = 144
+    BorderStyle = bsSingle
+    ClientHeight = 107
+    ClientWidth = 140
+    Color = clAppWorkspace
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 12
+    object Label11: TLabel
+      Left = 48
+      Height = 55
+      Top = 24
+      Width = 44
+      Caption = '00'
+      Font.Height = 56
+      ParentFont = False
+      OnClick = Label1Click
+    end
+  end
+  object Button7: TButton
+    Left = 648
+    Height = 31
+    Top = 136
+    Width = 144
+    Caption = 'Sol. Materiales'
+    TabOrder = 13
+    OnClick = Button1Click
+  end
+  object Panel8: TPanel
+    Left = 808
+    Height = 111
+    Top = 16
+    Width = 144
+    BorderStyle = bsSingle
+    ClientHeight = 107
+    ClientWidth = 140
+    Color = clAppWorkspace
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 14
+    object Label12: TLabel
+      Left = 40
+      Height = 55
+      Top = 24
+      Width = 44
+      Caption = '00'
+      Font.Height = 56
+      ParentFont = False
+      OnClick = Label1Click
+    end
+  end
+  object Button8: TButton
+    Left = 808
+    Height = 31
+    Top = 136
+    Width = 144
+    Caption = 'Sol. Servicios'
+    TabOrder = 15
+    OnClick = Button1Click
+  end
+  object Panel9: TPanel
+    Left = 648
+    Height = 111
+    Top = 176
+    Width = 144
+    BorderStyle = bsSingle
+    ClientHeight = 107
+    ClientWidth = 140
+    Color = clAppWorkspace
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 16
+    object Label13: TLabel
+      Left = 48
+      Height = 55
+      Top = 24
+      Width = 44
+      Caption = '00'
+      Font.Height = 56
+      ParentFont = False
+      OnClick = Label1Click
+    end
+  end
+  object Button9: TButton
+    Left = 648
+    Height = 31
+    Top = 296
+    Width = 144
+    Caption = 'Hab. y Descuentos'
+    TabOrder = 17
+    OnClick = Button1Click
+  end
+  object Panel10: TPanel
+    Left = 808
+    Height = 111
+    Top = 176
+    Width = 144
+    BorderStyle = bsSingle
+    ClientHeight = 107
+    ClientWidth = 140
+    Color = clAppWorkspace
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 18
+    object Label14: TLabel
+      Left = 40
+      Height = 55
+      Top = 24
+      Width = 44
+      Caption = '00'
+      Font.Height = 56
+      ParentFont = False
+      OnClick = Label1Click
+    end
+  end
+  object Button10: TButton
+    Left = 808
+    Height = 31
+    Top = 296
+    Width = 144
+    Caption = 'BOQ'
+    TabOrder = 19
     OnClick = Button1Click
   end
   object MainMenu1: TMainMenu
     Left = 40
     Top = 512
     object MenuItem1: TMenuItem
-      Caption = 'Archivo'
+      Caption = 'Inicio'
       OnClick = MenuItem1Click
       object MenuItem2: TMenuItem
         Caption = 'Proyectos'
         ShortCut = 16464
         OnClick = MenuItem2Click
       end
+      object MenuItem11: TMenuItem
+        Caption = 'Presupuestos'
+      end
+      object MenuItem12: TMenuItem
+        Caption = 'Certificaciones'
+      end
       object MenuItem5: TMenuItem
         Caption = 'Salir'
         ShortCut = 16465
         OnClick = MenuItem5Click
+      end
+    end
+    object MenuItem8: TMenuItem
+      Caption = 'Datos'
+      object MenuItem9: TMenuItem
+        Caption = 'Productos'
+        OnClick = MenuItem9Click
+      end
+      object MenuItem10: TMenuItem
+        Caption = 'Contactos'
+      end
+      object MenuItem16: TMenuItem
+        Caption = 'APUs'
+      end
+      object MenuItem17: TMenuItem
+        Caption = 'Hab. y Descuentos'
+      end
+    end
+    object MenuItem13: TMenuItem
+      Caption = 'Ejecución'
+      object MenuItem14: TMenuItem
+        Caption = 'Solicitud de Materiales'
+      end
+      object MenuItem15: TMenuItem
+        Caption = 'Solicitud de Servicios'
       end
     end
     object MenuItem3: TMenuItem
@@ -233,5 +424,9 @@ object FormPrincipal: TFormPrincipal
         OnClick = MenuItem7Click
       end
     end
+  end
+  object TrayIcon1: TTrayIcon
+    Left = 128
+    Top = 512
   end
 end

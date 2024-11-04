@@ -10,9 +10,9 @@ uses
 
 type
 
-  { TForm4 }
+  { TFormProyectos }
 
-  TForm4 = class(TForm)
+  TFormProyectos = class(TForm)
     DBEdit1: TDBEdit;
     DBEdit2: TDBEdit;
     DBEdit3: TDBEdit;
@@ -29,15 +29,15 @@ type
   end;
 
 var
-  Form4: TForm4;
+  FormProyectos: TFormProyectos;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm4 }
+{ TFormProyectos }
 
-procedure TForm4.SQLite3Connection1AfterConnect(Sender: TObject);
+procedure TFormProyectos.SQLite3Connection1AfterConnect(Sender: TObject);
 begin
 
 end;

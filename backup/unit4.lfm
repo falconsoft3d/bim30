@@ -1,4 +1,4 @@
-object Form4: TForm4
+object FormProyectos: TFormProyectos
   Left = 335
   Height = 423
   Top = 234
